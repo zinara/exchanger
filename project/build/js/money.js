@@ -131,7 +131,7 @@ function handleErrors(error) {
 // check network state
 app.networkState = function() {
   if (navigator.onLine) {
-    $('.offlinerow').css("display", "block");
+    $('.offlinerow').css("display", "none");
   }
 }
 
