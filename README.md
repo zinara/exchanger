@@ -1,2 +1,4 @@
-# exchanger
-An app for currency exchanges
+## Welcome to GitHub Pages
+
+This app is for currency exchanges from one currency to another.
+
