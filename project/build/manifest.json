@@ -3,20 +3,20 @@
     "name": "Exchanger",
     "icons": [ {
         
-            "src": "exchanger/project/build/images/icons/icon-128.png",
+            "src": "images/icons/icon-128.png",
             "type": "image/png",
             "sizes": "128x128"
           }, {
-            "src": "exchanger/project/build/images/icons/icon-256.png",
+            "src": "images/icons/icon-256.png",
             "type": "image/png",
             "sizes": "256x256"
           },
           {
-            "src": "exchanger/project/build/images/icons/icon-512.png",
+            "src": "images/icons/icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
           }],
-          "start_url": "exchanger/project/build/index.html",
+          "start_url": "index.html",
           "background_color": "#eeeeee",
           "display": "standalone",
           "orientation": "portrait",
