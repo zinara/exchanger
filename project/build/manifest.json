@@ -1,22 +1,22 @@
 {
     "short_name": "Converko",
-    "name": "Currency Converter",
+    "name": "exchanger",
     "icons": [ {
         
-            "src": "images/icons/icon-128.png",
+            "src": "project/build/images/icons/icon-128.png",
             "type": "image/png",
             "sizes": "128x128"
           }, {
-            "src": "images/icons/icon-256.png",
+            "src": "project/build/images/icons/icon-256.png",
             "type": "image/png",
             "sizes": "256x256"
           },
           {
-            "src": "images/icons/icon-512.png",
+            "src": "project/build/images/icons/icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
           }],
-          "start_url": "index.html",
+          "start_url": "project/build/index.html",
           "background_color": "#eeeeee",
           "display": "standalone",
           "orientation": "portrait",

@@ -43,7 +43,7 @@
         app.networkState();
       })
 
-  const newcountriesUrl = '/js/newcountries.json';
+  const newcountriesUrl = 'project/build/js/newcountries.json';
 
   // add object files to the currency-from objectstore
   
@@ -124,7 +124,6 @@ function handleErrors(error) {
   console.log('ERROR:',error);
   // show offline image
   $('.offlinerow').show();
- // $('.convertrow').css("margin-top", "170px");
   // return button to its former state
   $('#convert').text('Click to convert');
 }
@@ -133,7 +132,6 @@ function handleErrors(error) {
 app.networkState = function() {
   if (navigator.onLine) {
     $('.offlinerow').css("display", "block");
-   // $('.convertrow').css("margin-top", "50px");
   }
 }
 
