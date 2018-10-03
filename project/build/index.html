@@ -11,24 +11,24 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"> 
         <link rel="stylesheet" href="css/exchan.css">
 
-        <link rel="manifest" href="manifest.json">
+        <link rel="manifest" href="build/manifest.json">
         <!-- Chrome for Android theme color -->
         <meta name="theme-color" content="#2E3AA1">
 
         <!-- Add to homescreen for Chrome on Android -->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="application-name" content="Converko">
-        <link rel="icon" sizes="256x256" href="images/icons/icon-256.png">
+        <link rel="icon" sizes="256x256" href="build/images/icons/icon-256.png">
 
         <!-- Add to homescreen for Safari on iOS -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="apple-mobile-web-app-title" content="Converko">
-        <link rel="apple-touch-icon" href="images/icons/icon-256.png">
+        <link rel="apple-touch-icon" href="build/images/icons/icon-256.png">
 
         <!-- Tile for Win8 -->
         <meta name="msapplication-TileColor" content="#3372DF">
-        <meta name="msapplication-TileImage" content="images/icons/icon-256.png">
+        <meta name="msapplication-TileImage" content="build/images/icons/icon-256.png">
     
         
     </head>
@@ -61,7 +61,7 @@
            
           <div class="row offlinerow">
           <div class="col fourth">
-              <img src="images/offline2.png" class="img-fluid" alt="offline image">
+              <img src="build/images/offline2.png" class="img-fluid" alt="offline image">
               <div class="row fourthandhalf">
                 <div class="col">
               <button id="retry" type="button">RETRY</button>
@@ -89,13 +89,13 @@
           </div>
     
     
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/money.js" async> </script>
+    <script src="build/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="build/js/money.js" async> </script>
 
     <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js')
+            navigator.serviceWorker.register('build/sw.js')
               .then(registration => {
                 console.log('Service Worker registered! 😎');
               })
