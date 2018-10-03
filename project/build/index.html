@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="Description" content="Currency Converter - Author: Sochima Ozojie">
+        <link rel="canonical" href="https://zinara.github.io/Currency-Converter/">
+        <link rel="stylesheet" href="css/bootstrap.main.min.css">  
+        <link rel="font" href="css/lateef1.woff2">
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/exchan.css">
+
+        <link rel="manifest" href="manifest.json">
+        <!-- Chrome for Android theme color -->
+        <meta name="theme-color" content="#2E3AA1">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Converko">
+        <link rel="icon" sizes="256x256" href="images/icons/icon-256.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Converko">
+        <link rel="apple-touch-icon" href="images/icons/icon-256.png">
+
+        <!-- Tile for Win8 -->
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <meta name="msapplication-TileImage" content="images/icons/icon-256.png">
+    
+        
+    </head>
+
+    <body id="body">
+
+            <header class="header">
+                <h1 class="header__title">Currency converter</h1>
+            </header>
+  
+  <main class="main">
+        <div class="container" id="scroll" hidden>
+            <div class="row">
+        <div class="col first">
+            <h2>From</h2>
+                <select id="Currfr" class="seles" aria-label="currency From"> </select>
+        </div>
+
+        <div class="col second">
+            <h2>To</h2>
+                <select id="Currto" class="toles" aria-label="currency To"> </select>
+        </div>
+    </div>
+         
+          <div class="row">
+      <div class="col third">
+              <input type="number"class="fores" value= "1.00" placeholder="Enter amount" aria-label=" Input value"> 
+      </div>
+           </div>
+           
+          <div class="row offlinerow">
+          <div class="col fourth">
+              <img src="images/offline2.png" class="img-fluid" alt="offline image">
+              <div class="row fourthandhalf">
+                <div class="col">
+              <button id="retry" type="button">RETRY</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row convertrow">
+          <div class="col fifth">
+                <input   id="Curral" class="cures" type="text" readonly aria-label="final value">
+          </div>
+          <div class="col sixth">
+             <button id="convert" type ="button" class="btn btn-primary btn-lg">Click to convert or else</button>     
+        </div>
+    </div>
+
+    </div>
+        </main>
+
+        <div class="loader">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+              <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+          </div>
+    
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/money.js" async> </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then(registration => {
+                console.log('Service Worker registered! 😎');
+              })
+              .catch(err => {
+                console.log('Registration failed 😫 ', err);
+              });
+          });
+        }
+      </script>
+    </body>
+</html>
