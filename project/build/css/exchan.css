@@ -120,7 +120,7 @@ html, body {
             transform: translate(-50%, -50%); }
     .loader #spinner {
       box-sizing: border-box;
-      stroke: rgb(58, 102, 183);
+      stroke: rgba(177, 8, 8, 0.856);
       stroke-width: 3px;
       -webkit-transform-origin: 50%;
               transform-origin: 50%;
