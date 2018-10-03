@@ -43,7 +43,7 @@
         app.networkState();
       })
 
-  const newcountriesUrl = 'build/js/newcountries.json';
+  const newcountriesUrl = 'exchanger/project/build/js/newcountries.json';
 
   // add object files to the currency-from objectstore
   
