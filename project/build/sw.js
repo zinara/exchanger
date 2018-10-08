@@ -14,7 +14,7 @@ if (workbox) {
   },
   {
     "url": "css/exchan.css",
-    "revision": "21e72e30c1421134961c210ad4c37a01"
+    "revision": "4c6144976c48a2bb091976fe00317d69"
   },
   {
     "url": "css/lateef1.woff2",
@@ -33,12 +33,12 @@ if (workbox) {
     "revision": "aef8ba4b14b5730b3125d561bd38105f"
   },
   {
-    "url": "images/offline2.png",
-    "revision": "93eb603294e172420f5ac5b71c60f68e"
+    "url": "images/offline3.png",
+    "revision": "11d6eb3094caa11dd89efec8475c71df"
   },
   {
     "url": "index.html",
-    "revision": "70d7f7422b68ced30752a81222060c48"
+    "revision": "524c175b33f9c0d25961cfc4c53e7466"
   },
   {
     "url": "js/jquery-3.2.1.min.js",
