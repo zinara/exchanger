@@ -18,6 +18,7 @@
           }],
           "start_url": "index.html",
           "background_color": "#eeeeee",
+          "lang": "en-US",
           "display": "standalone",
           "orientation": "portrait",
           "theme_color": "#b61414"

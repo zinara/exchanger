@@ -14,11 +14,15 @@ if (workbox) {
   },
   {
     "url": "css/exchan.css",
-    "revision": "4c6144976c48a2bb091976fe00317d69"
+    "revision": "2952391a960fbd7220007b89cd0c9118"
   },
   {
     "url": "css/lateef1.woff2",
     "revision": "d16fed62dcc34400dd4edd7bcc65406e"
+  },
+  {
+    "url": "images/checkmark.png",
+    "revision": "48cd64bc227221927e23df2ab21596d6"
   },
   {
     "url": "images/icons/icon-128.png",
@@ -37,8 +41,12 @@ if (workbox) {
     "revision": "11d6eb3094caa11dd89efec8475c71df"
   },
   {
+    "url": "images/xmark.png",
+    "revision": "1d4e39b7349eb6ec1575dcfe6521f1a0"
+  },
+  {
     "url": "index.html",
-    "revision": "524c175b33f9c0d25961cfc4c53e7466"
+    "revision": "f6ccfec217737686630e19b59ca0a153"
   },
   {
     "url": "js/jquery-3.2.1.min.js",
@@ -46,7 +54,7 @@ if (workbox) {
   },
   {
     "url": "js/money.js",
-    "revision": "c41fe8458a427676dda7988e43c82500"
+    "revision": "76e89af5fb3f938b214a0ab218d9b118"
   },
   {
     "url": "js/newcountries.json",
@@ -54,7 +62,7 @@ if (workbox) {
   },
   {
     "url": "manifest.json",
-    "revision": "f018dbbc53ec483936d5747a434fa92b"
+    "revision": "f8f0ff84d37f1e7f17f8e66de579b965"
   },
   {
     "url": "pages/404.html",

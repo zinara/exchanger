@@ -37,6 +37,7 @@
       document.getElementById('convert').addEventListener('click', function() {
         // convert currencies
         app.converter();
+
       });
 
       document.getElementById('retry').addEventListener('click', function(){
@@ -133,6 +134,19 @@ app.networkState = function() {
   if (navigator.onLine) {
     $('.offlinerow').css("display", "none");
   }
+}
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(registration => {
+        console.log('Service Worker registered! 😎');
+      })
+      .catch(err => {
+        console.log('Registration failed 😫 ', err);
+      });
+  });
 }
 
 }()); 
