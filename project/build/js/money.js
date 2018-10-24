@@ -33,6 +33,15 @@
           app.addTo();
       });
 
+      if (!('Notification' in window)) {
+        console.log('This browser does not support notifications!');
+        return;
+      }
+
+      Notification.requestPermission(status => {
+        console.log('Notification permission status:', status);
+      });
+
 
       document.getElementById('convert').addEventListener('click', function() {
         // convert currencies
@@ -114,9 +123,11 @@ var query = `${fromc}_${toc}`;
   let calc = valu[query];
   let amount = $('.fores').val();
   let total = calc * amount;
+  let queryTotal = `${query} : ${total.toFixed(3)}`;
   // move value to three decimal places
   $('.cures').attr('value',total.toFixed(3));
   $('#convert').text('Click to convert');
+  return displayNotification("Exchange alert!", queryTotal);
 }
  
 // handle errors
@@ -133,6 +144,50 @@ app.networkState = function() {
   if (navigator.onLine) {
     $('.offlinerow').css("display", "none");
   }
+}
+
+// - display a Notification
+function displayNotification(title, body) {
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(reg => {
+       // TODO 2.4 - Add 'options' object to configure the notification
+       const options = {
+        body: body,
+        icon: 'images/icons/icon-128.png',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 'index'
+        },
+      
+        // TODO 2.5 - add actions to the notification
+        actions: [
+          {action: 'explore', title: 'Go to the site',
+            icon: 'images/checkmark.png'},
+          {action: 'close', title: 'Close the notification',
+            icon: 'images/xmark.png'},
+        ]
+      
+        // TODO 5.1 - add a tag to the notification
+      
+      };
+
+      reg.showNotification(title,options);
+    });
+  }
+
+}
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(registration => {
+        console.log('Service Worker registered! 😎');
+      })
+      .catch(err => {
+        console.log('Registration failed 😫 ', err);
+      });
+  });
 }
 
 }()); 
